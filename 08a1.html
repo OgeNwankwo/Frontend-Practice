@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>08a exercise</title>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+   
+
+    <script>
+      //8a - 8d
+      //8a
+        const product = {
+          name: 'basketball',
+          price: 2095
+        };
+        console.log(product);
+        console.log(product.price);
+        console.log(product.name);
+
+        //8b
+        product.price += 500;
+        console.log(product);
+
+        //8c
+        product['delivery-time'] = '3 days';
+        console.log(product);
+
+        //8d
+
+        function comparePrice(product1, product2) {
+          if (product1.price < product2.price) {
+            return product1;
+          } else {
+            return product2
+          }
+        };
+
+        const product1 = {
+          name: 'bike',
+          price: 1200
+        };
+
+        const product2 = {
+          name: 'shoe',
+          price: 500
+        };
+        console.log(comparePrice(product1, product2));
+
+        //8e - 8h
+        function isSameProduct(product3, product4) {
+          if (product3.name === product4.name && product3.price === product3.price){
+            return true;
+          }else{
+            return false;
+          }
+        };
+
+        const product3 = {
+          name: 'basketball',
+          price: 1090
+        };
+        const product4 = {
+          name: 'football',
+          price: 1090
+        };
+
+        console.log(isSameProduct(product3, product4));
+        // 8f
+        console.log('Good Morning'.toLowerCase());
+        //8g
+        console.log('test'.repeat(8));
+
+        
+    </script>
+  </body>
+</html>
